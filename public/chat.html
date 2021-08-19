@@ -10,7 +10,7 @@
 <body>
   <div class="chat-container">
     <header class="chat-header">
-      <h1><i class="fas fa-smile"></i> ChatCord</h1>
+      <h1><i class="fas fa-smile"></i> SaYannChat</h1>
       <a href="index.html" class="btn">Leave Room</a>
     </header>
     <main class="chat-main">
@@ -26,15 +26,15 @@
           <li>Mike</li>
         </ul>
       </div>
-      <div class="chat-messages">
-					<div class="message">
+      <div class="chat-messages chatMsgsContainer">
+					<div class="msgSent">
 						<p class="meta">Brad <span>9:12pm</span></p>
 						<p class="text">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
 							repudiandae.
 						</p>
 					</div>
-					<div class="message">
+					<div class="msgSent">
 						<p class="meta">Mary <span>9:15pm</span></p>
 						<p class="text">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
@@ -46,7 +46,7 @@
     <div class="chat-form-container">
       <form id="chat-form">
         <input
-          id="msg"
+          id="msgId"
           type="text"
           placeholder="Enter Message"
           required

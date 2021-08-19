@@ -91,14 +91,14 @@ a {
 	overflow-y: scroll;
 }
 
-.chat-messages .message {
+.chat-messages .msgSent {
 	padding: 10px;
 	margin-bottom: 15px;
 	background-color: var(--light-color);
 	border-radius: 5px;
 }
 
-.chat-messages .message .meta {
+.chat-messages .msgSent .meta {
 	font-size: 15px;
 	font-weight: bold;
 	color: var(--dark-color-b);
@@ -106,7 +106,7 @@ a {
 	margin-bottom: 7px;
 }
 
-.chat-messages .message .meta span {
+.chat-messages .msgSent .meta span {
 	color: #777;
 }
 
