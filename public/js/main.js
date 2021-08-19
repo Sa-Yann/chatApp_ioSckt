@@ -16,14 +16,17 @@ socket.on('message_sent', message => {
 
 socket.on('welcome_msg', message => {
     console.log(message);
+    outputMessage(message);
 });
 
 socket.on('hasJoined_msg', message => {
     console.log(message);
+    outputMessage(message);
 });
 
 socket.on('disconnect_msg', message => {
     console.log(message);
+    outputMessage(message);
 });
 
 // Message submit to server
@@ -44,6 +47,9 @@ chatForm.addEventListener('submit', e => {
 function outputMessage(message) {
         const div = document.createElement('div');
         div.classList.add('msgSent');
-        div.innerHTML = `<p class="text">${message}</p>`
+        div.innerHTML = `<p class="meta">${message.username}<span>${message.time}</span></p>
+        <p class="text">
+            ${message.text}
+        </p>`
         document.querySelector('.chatMsgsContainer').appendChild(div);
 };
